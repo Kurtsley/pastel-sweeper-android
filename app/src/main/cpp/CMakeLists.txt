@@ -27,6 +27,10 @@ list(APPEND SOURCES ${ANDROID_NDK}/sources/android/native_app_glue/android_nativ
 
 # Create a shared library with game source files
 add_library(${APP_LIB_NAME} SHARED ${SOURCES})
+# Add base game sources
+list(APPEND SOURCES
+        "${CMAKE_SOURCE_DIR}/deps/Pastel-Sweeper/src/Main.cpp"
+)
 
 # Define compiler macros for the library
 target_compile_definitions(${APP_LIB_NAME} PRIVATE PLATFORM_ANDROID)

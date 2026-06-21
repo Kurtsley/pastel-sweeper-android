@@ -2,3 +2,6 @@
 	path = app/src/main/cpp/deps/raylib
 	url = https://github.com/raysan5/raylib.git
 	branch = master
+[submodule "app/src/main/cpp/deps/Pastel-Sweeper"]
+	path = app/src/main/cpp/deps/Pastel-Sweeper
+	url = git@github.com:Kurtsley/Pastel-Sweeper.git
